@@ -1,0 +1,10 @@
+main{
+    border: 5px solid black;
+}
+
+section{
+    border: 2px dotted red;
+}
+
+/* em is used for front sizeed is change in various broswer 
+arm is used for front sizeed is change in various broswer but arm used it's parent's value which don't effect it */

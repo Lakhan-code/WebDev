@@ -1,0 +1,18 @@
+/* p{
+    color: #ff0000;
+} */
+ /* #p01{
+    color: aqua;
+ } */
+  .pclass{
+    color: white;
+    background-color: black;
+  }
+
+ #decsel p{
+color: brown;
+  }
+
+  #dirsel > P{
+    color: chartreuse;
+  }
