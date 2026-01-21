@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;}
+
+    div{
+        color: rgb(238, 186, 108);
+        border: 5px solid rgb(255, 240, 31) ;
+        margin: 50px; 
+        padding: 60px;
+    }
