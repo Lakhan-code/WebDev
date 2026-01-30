@@ -1,0 +1,18 @@
+h2{
+    color: rgb(223, 164, 0);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style:wavy ;
+    letter-spacing: 0.5rem;
+    word-spacing: 15px;
+    text-shadow: 5px 5px rebeccapurple;
+}
+body{
+    /* background-color: #2980B9;
+    background: linear-gradient( #2980B9,#6DD5FA, #FFFFFF) ;
+    height: 100vh; */
+    background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right ,#FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

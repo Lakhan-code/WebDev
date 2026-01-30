@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To My Valentine ❤️</title>
+
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/2764.svg" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    :root {
+      --primary: #FF6B9D;
+      --secondary: #FFE5EC;
+      --accent: #C9184A;
+      --white: #fff;
+      --text-dark: #2D2D2D;
+      --text-light: #6B6B6B;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ---------------- SECTIONS ---------------- */
+    section {
+      padding: 6rem 0;
+      position: relative
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 2rem
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Cormorant Garamond', serif
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem)
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--accent);
+      margin-bottom: 2rem
+    }
+
+    p {
+      color: var(--text-light);
+      max-width: 800px;
+      margin: auto
+    }
+
+    /* ---------------- HERO ---------------- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, var(--secondary), var(--white));
+    }
+
+    .hero-content {
+      animation: fadeUp 1s forwards
+    }
+
+    .heart-big {
+      font-size: 3rem;
+      color: var(--primary);
+      animation: heartbeat 2s infinite
+    }
+
+    /* ---------------- STORY ---------------- */
+    .story-box {
+      background: var(--secondary);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(255, 107, 157, .15);
+    }
+
+    /* ---------------- REASONS ---------------- */
+    .reasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .05);
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .card.show {
+      animation: fadeUp .6s forwards
+    }
+
+    /* ---------------- PHOTOS ---------------- */
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .photo {
+      aspect-ratio: 1;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ---------------- LETTER ---------------- */
+    .letter {
+      background: #fff;
+      padding: 4rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 50px rgba(255, 107, 157, .2);
+    }
+
+    /* ---------------- FINAL ---------------- */
+    .final {
+      text-align: center;
+      background: linear-gradient(135deg, var(--secondary), var(--white));
+    }
+
+    .btn {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      border: none;
+      padding: 1rem 3rem;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      opacity: 0;
+      transform: scale(.9);
+      transition: .5s;
+      margin-top: 3rem;
+      background: #fff;
+      padding: 3rem;
+      border-radius: 20px;
+    }
+
+    .hidden.show {
+      opacity: 1;
+      transform: scale(1)
+    }
+
+    /* ---------------- FLOATING EFFECTS ---------------- */
+    .heart,
+    .teddy {
+      position: fixed;
+      font-size: 2rem;
+      animation: floatUp linear forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    .kiss {
+      position: fixed;
+      font-size: 1.8rem;
+      animation: flyKiss ease-out forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(100vh);
+        opacity: 0
+      }
+
+      10% {
+        opacity: 1
+      }
+
+      to {
+        transform: translateY(-120px);
+        opacity: 0
+      }
+    }
+
+    @keyframes flyKiss {
+      to {
+        transform: translate(var(--tx), var(--ty)) scale(.5);
+        opacity: 0
+      }
+    }
+
+    @keyframes heartbeat {
+      30% {
+        transform: scale(1.2)
+      }
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        animation: none !important
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="heart-big">❤️</div>
+      <h1>Happy Valentine’s Day</h1>
+      <p>You are my favorite place, my calm, and my best decision.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section>
+    <div class="container reveal">
+      <h2>Our Story</h2>
+      <div class="story-box">
+        <p>8 May 2024 ko mne insta pr msg kiya tha soch kr ki ye choti si cute ladki kon hai .
+          Madam jii reply to kr diya but baad me ignore kiya fhr mne jhooth bola ki m aapke college aa rekha hu or aapko
+          mne dekha or aapke piche mera ek agent hai. uske baad humare baate hui din ,raat baat krte the . uske baad
+          Madam ji ne whatsapp number bhi de diya tha fhr humare bhut sari raat ke 3-3 baje tk baat hoti thi fhr 1.5
+          saal tk BestFriend the fhr ek din sorry raat me 19-11-2025 ki raat ko mne Madam ji ko purpose kiya or Madam ji
+          ne haan kr di .
+          uske baad 31-12-2025 mera life ka sbse best moment tha kyuki us din m aapse real life me mila 😚😚😚
+          thank you Madam ji meri life me aane ke liye 😚😚😚😚😚. My SpecialOne My love😚😚😚😚😚 </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section>
+    <div class="container">
+      <h2>Why I Love You</h2>
+      <div class="reasons">
+        <div class="card">Your strength and honesty</div>
+        <div class="card">The way you listen</div>
+        <div class="card">Your laughter</div>
+        <div class="card">Your loyalty</div>
+        <div class="card">your smile</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section>
+    <div class="container">
+      <h2>Our Memories</h2>
+      <div class="photos">
+        <div class="photo"><img src="loveImg/WhatsApp Image 2026-01-26 at 1.53.23 PM (1).jpeg"></div>
+        <div class="photo"><img src="loveImg/WhatsApp Image 2026-01-26 at 1.53.23 PM.jpeg"></div>
+        <div class="photo"><img src="loveImg/WhatsApp Image 2026-01-26 at 1.53.24 PM.jpeg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section>
+    <div class="container">
+      <h2>A Letter to You</h2>
+      <div class="letter">
+        <p>I love you not just for who you are, but for who I become with you. Every day, I choose you—again and again.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="container">
+      <h2>One More Thing…</h2>
+      <a href="./love.html"><button class="btn" onclick="showMessage()">Click Here</button>
+        <div class="hidden" id="finalMessage">
+          <h3>You Are Everything ❤️</h3>
+          <p>This page is small. My love for you isn’t.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    /* Reveal cards */
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.card').forEach((c, i) => {
+        if (c.getBoundingClientRect().top < window.innerHeight - 100) {
+          setTimeout(() => c.classList.add('show'), i * 100);
+        }
+      });
+    });
+
+    /* Final message */
+    function showMessage() {
+      document.getElementById('finalMessage').classList.add('show');
+    }
+
+    /* Floating effects */
+    const limit = (c, m) => document.querySelectorAll('.' + c).length < m;
+
+    setInterval(() => {
+      if (!limit('heart', 15)) return;
+      const e = document.createElement('div');
+      e.className = 'heart';
+      e.textContent = '❤️';
+      e.style.left = Math.random() * 100 + '%';
+      e.style.animationDuration = Math.random() * 4 + 5 + 's';
+      document.body.appendChild(e);
+      setTimeout(() => e.remove(), 9000);
+    }, 900);
+
+    setInterval(() => {
+      if (!limit('teddy', 8)) return;
+      const e = document.createElement('div');
+      e.className = 'teddy';
+      e.textContent = ['🧸', '🐻'][Math.floor(Math.random() * 2)];
+      e.style.left = Math.random() * 100 + '%';
+      e.style.animationDuration = Math.random() * 6 + 8 + 's';
+      document.body.appendChild(e);
+      setTimeout(() => e.remove(), 15000);
+    }, 1600);
+
+    setInterval(() => {
+      if (!limit('kiss', 10)) return;
+      const e = document.createElement('div');
+      e.className = 'kiss';
+      e.textContent = '💋';
+      e.style.left = Math.random() * 100 + '%';
+      e.style.top = Math.random() * 100 + '%';
+      e.style.setProperty('--tx', (Math.random() - .5) * 600 + 'px');
+      e.style.setProperty('--ty', (Math.random() - .5) * 600 + 'px');
+      e.style.animationDuration = Math.random() * 2 + 4 + 's';
+      document.body.appendChild(e);
+      setTimeout(() => e.remove(), 7000);
+    }, 800);
+  </script>
+
+</body>
+
+</html>

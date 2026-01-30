@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid black;
+    /* height: 400px;
+    width: 400px; */
+    text-align: justify;
+  
+}
+.subcontainer{
+    overflow: auto;
+}
+
+  .img1{
+        float: right;
+}
+
+  .img2{
+        float: left;
+}
+/* .p2{
+    clear: left;
+} */

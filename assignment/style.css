@@ -1,0 +1,120 @@
+
+
+body{
+    background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 15px 60px;
+   background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navlink{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color:#203765;
+    font-size: 0.95rem;
+    font-size: large;
+    font-weight: bold;
+   
+} 
+
+.navlink li {
+    display: inline;
+}
+.user-btn{
+    padding: 8px 16px;
+    background-color: #e0f2ff;
+    /* color: #6dbcdd; */
+    color: #1d9bf0;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+ }
+ .container{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+}
+
+.left-content {
+    width: 50%;
+    margin: 80px;
+}
+
+.left-content h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color: #333b46;
+}
+
+.left-content h2.left {
+    color: #005995; 
+}
+
+.left-content p {
+    margin-top: 20px;
+    max-width: 480px;
+    color: #474c56;
+    line-height: 1.6;
+}
+.right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+} 
+
+.button{
+    margin-top: 30px;
+    padding: 16px 32px;
+    font-size: larger;
+    border-radius: 80px;
+    border: none;
+    font-weight: 600;
+    background-color:  #1d9bf0;
+    color: white;
+   
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 24px;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 40px 24px;
+    }
+
+    .left-content,
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        max-width: 300px;
+        margin-top: 30px;
+    }
+}

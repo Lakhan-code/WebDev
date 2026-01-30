@@ -1,0 +1,43 @@
+.container{
+    background-color: bisque;
+    height: 600px;
+    width: 600px;
+    margin: 100px;
+}
+
+.box{
+    height: 60px;
+    width: 60px;
+}
+
+.static{
+    background-color: aliceblue;
+    position: static;
+}
+.rel{
+    background-color: aqua;
+    position: relative;
+    top: 25px;
+    left: 60px;
+}
+.abs{
+    background-color: brown;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.fix{
+    background-color: yellow;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+.sti{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.box1{
+    height: 250vh;
+}
