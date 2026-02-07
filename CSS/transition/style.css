@@ -1,0 +1,15 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 0 auto;
+transition-duration: 5s;
+transition-delay: 1ms ;
+}
+
+.box:hover{
+    background-color: aqua;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    
+}
